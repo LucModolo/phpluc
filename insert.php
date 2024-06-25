@@ -7,9 +7,9 @@ $mysqli = new mysqli("localhost", "Luc", "Password1", "Luc", 3306);
 // to prevent SQL injection attacks.
 
 
-$field1 = $mysqli->real_escape_string($_POST['field2']);
-$field2 = $mysqli->real_escape_string($_POST['field3']);
-$field3 = $mysqli->real_escape_string($_POST['field4']);
+$field1 = $mysqli->real_escape_string($_POST['field1']);
+$field2 = $mysqli->real_escape_string($_POST['field2']);
+$field3 = $mysqli->real_escape_string($_POST['field3']);
 
 $query = "INSERT INTO Luc (id, name, vorname, Strasse)
             VALUES (null,'{$field1}','{$field2}','{$field3}')";
