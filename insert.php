@@ -1,4 +1,6 @@
 <?php
+
+
 $mysqli = new mysqli("localhost", "Luc", "Password1", "Luc", 3306);
 
 // Don't forget to properly escape your values before you send them to DB
